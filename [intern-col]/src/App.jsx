@@ -117,17 +117,36 @@ function TaskContainer({task, progress}) {
 function QuarterContainer({quarter, months, tasks}) {
   return (
     <div className='quarter-container'>
-      <QuarterSection text={quarter}/>
-      <MonthsSection text={months}/>
-      <TaskContainer task={tasks}/>
+      <QuarterSection quarter={quarter}/>
+      <MonthsSection months={months}/>
+      <TaskContainer tasks={tasks}/>
     </div>
   )
 }
 
 function SubBodySection() {
+  const quartersData = [
+    {
+      quarter: 'Q1 2019',
+      months: 'January - Match',
+      tasks: [
+        {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64}
+      ]
+    },
+
+  ]
   return (
     <div className='sub-body-section'>
-      <QuarterContainer/>
+      {
+        quartersData.map((data, index) => {
+          <QuarterContainer 
+            key={index}
+            quarter={data.quarter}
+            months={data.months}
+            tasks={data.tasks}
+            />
+        })
+      }
     </div>
   )
 }
@@ -142,16 +161,6 @@ function BodySection() {
 }
 
 function App() {
-  const firstQuarterData = [
-    {
-      quarter: 'Q1 2019',
-      months: 'January - Match',
-      tasks: [
-        {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64}
-      ]
-    },
-
-  ]
   return (
     <div className="main-section">
       <HeaderSection/>
