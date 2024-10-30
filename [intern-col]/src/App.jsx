@@ -61,11 +61,20 @@ function ProgressNumber(props) {
   )
 }
 
+function ProgressButton() {
+  return (
+    <div className='progress-btn'>
+      <button>...</button>
+    </div>
+  )
+}
+
 function ProgressSection() {
   return (
     <div className='progress-section'>
       <ProgressIcon/>
       <ProgressNumber text={'64'}/>
+      <ProgressButton/>
     </div>
   )
 }
