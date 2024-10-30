@@ -35,10 +35,18 @@ function MonthsSection(props) {
   )
 }
 
+function TaskDetail(props) {
+  return (
+    <div className='task-detail'>
+      <p>{props.text}</p>
+    </div>
+  )
+}
+
 function TaskContainer() {
   return (
     <div className='task-container'>
-      Task Container
+      <TaskDetail text={'Re-designed the zero-g doggie bags, No more spills!'}/>
     </div>
   )
 }
