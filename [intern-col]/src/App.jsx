@@ -19,10 +19,18 @@ function BodySubheaderSection() {
   )
 }
 
+function FirstQuarterContainer() {
+  return (
+    <div className='first-quarter-container'>
+      First
+    </div>
+  )
+}
+
 function SubBodySection() {
   return (
     <div className='sub-body-section'>
-      Main content
+      <FirstQuarterContainer/>
     </div>
   )
 }
