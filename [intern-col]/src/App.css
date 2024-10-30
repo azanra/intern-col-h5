@@ -28,6 +28,16 @@ p {
   font-size: var(--font-size-sub);
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
 .body-subheader-section > h2{
   font-size: 20px;
   margin-bottom: 30px;
@@ -35,25 +45,6 @@ p {
 
 .task-detail > p {
   font-weight: bold;
-}
-
-.main-section,
-.progress-section,
-.create-container,
-.sub-body-section,
-button,
-.progress-icon,
-.progress-number,
-.btn-container {
-  display: flex;
-}
-
-.progress-icon,
-.progress-number,
-.create-text-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-section {
