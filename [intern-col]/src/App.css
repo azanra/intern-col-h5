@@ -1,33 +1,36 @@
+:root {
+  --color-text-main: #2F3136;
+  --color-text-lighter: #5D6372; 
+  --font-size-main: 14px;
+  --font-size-sub: 12px
+}
+
 * {
   box-sizing: border-box;
 }
 
 body, h2, p {
   margin: 0;
-  color: #2F3136;
+  color: var(--color-text-main);
   font-family: 'Open Sans', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h2 { 
+  font-weight: bold;
+}
+
+p {
+  font-size: var(--font-size-main);
+}
+
+.small-text {
+  color: var(--color-text-lighter);
+  font-size: var(--font-size-sub);
 }
 
 .body-subheader-section > h2{
   font-size: 20px;
   margin-bottom: 30px;
-}
-
-.task-detail > p,
-.months-section > p,
-.create-text-btn > p {
-  font-size: 14px;
-}
-
-.quarter-section > p,
-.progress-number > p {
-  font-size: 12px;
-}
-
-.progress-number > p,
-.quarter-section > p,
-.months-section > p {
-  color: #5D6372;
 }
 
 .task-detail > p {
@@ -60,10 +63,6 @@ button,
   display: flex;
   justify-content: center;
   padding: 20px 0;
-}
-
-h2 { 
-  font-weight: bold;
 }
 
 .body-section {

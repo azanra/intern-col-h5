@@ -22,7 +22,7 @@ function BodySubheaderSection() {
 function QuarterSection({quarter}) {
   return (
     <div className='quarter-section'>
-      <p>{quarter}</p>
+      <p className='small-text'>{quarter}</p>
     </div>
   )
 }
@@ -56,7 +56,7 @@ function ProgressIcon() {
 function ProgressNumber({progress}) {
   return (
     <div className='progress-number'>
-      <p>{progress}%</p>
+      <p className='small-text'>{progress}%</p>
     </div>
   )
 }
