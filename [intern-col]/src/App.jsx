@@ -27,10 +27,19 @@ function QuarterSection(props) {
   )
 }
 
+function MonthsSection(props) {
+  return (
+    <div className='months-section'>
+      <p>{props.text}</p>
+    </div>
+  )
+}
+
 function FirstQuarterContainer() {
   return (
     <div className='first-quarter-container'>
       <QuarterSection text={'Q1 2019'}/>
+      <MonthsSection text={'January - March'}/>
     </div>
   )
 }
