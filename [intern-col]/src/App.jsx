@@ -132,21 +132,21 @@ function QuarterContainer({quarter, months, tasks}) {
 }
 
 function SubBodySection() {
-  const quartersData = [
+  const firstQuarterData = [
     {
       quarter: 'Q1 2019',
       months: 'January - Match',
       tasks: [
         {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64},
         {description: 'Travel & Relocation Support', progress: 12}
-      ]
-    },
-
+      ],
+    }
   ]
+
   return (
     <div className='sub-body-section'>
       {
-        quartersData.map((data, index) => (
+        firstQuarterData.map((data, index) => (
           <QuarterContainer 
             key={index}
             quarter={data.quarter}
