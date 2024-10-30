@@ -19,26 +19,26 @@ function BodySubheaderSection() {
   )
 }
 
-function QuarterSection(props) {
+function QuarterSection({quarter}) {
   return (
     <div className='quarter-section'>
-      <p>{props.text}</p>
+      <p>{quarter}</p>
     </div>
   )
 }
 
-function MonthsSection(props) {
+function MonthsSection({months}) {
   return (
     <div className='months-section'>
-      <p>{props.text}</p>
+      <p>{months}</p>
     </div>
   )
 }
 
-function TaskDetail(props) {
+function TaskDetail({task}) {
   return (
     <div className='task-detail'>
-      <p>{props.text}</p>
+      <p>{task}</p>
     </div>
   )
 }
@@ -53,10 +53,10 @@ function ProgressIcon() {
   )
 }
 
-function ProgressNumber(props) {
+function ProgressNumber({progress}) {
   return (
     <div className='progress-number'>
-      <p>{props.text}%</p>
+      <p>{progress}%</p>
     </div>
   )
 }
@@ -104,22 +104,22 @@ function CreateNewTaskBtn() {
   )
 }
 
-function TaskContainer() {
+function TaskContainer({task, progress}) {
   return (
     <div className='task-container'>
-      <TaskDetail text={'Re-designed the zero-g doggie bags, No more spills!'}/>
-      <ProgressSection/>
+      <TaskDetail task={task}/>
+      <ProgressSectio progress={progress}/>
       <CreateNewTaskBtn/>
     </div>
   )
 }
 
-function FirstQuarterContainer() {
+function QuarterContainer({quarter, months, tasks}) {
   return (
-    <div className='first-quarter-container'>
-      <QuarterSection text={'Q1 2019'}/>
-      <MonthsSection text={'January - March'}/>
-      <TaskContainer/>
+    <div className='quarter-container'>
+      <QuarterSection text={quarter}/>
+      <MonthsSection text={months}/>
+      <TaskContainer task={tasks}/>
     </div>
   )
 }
@@ -127,7 +127,7 @@ function FirstQuarterContainer() {
 function SubBodySection() {
   return (
     <div className='sub-body-section'>
-      <FirstQuarterContainer/>
+      <QuarterContainer/>
     </div>
   )
 }
@@ -142,6 +142,16 @@ function BodySection() {
 }
 
 function App() {
+  const firstQuarterData = [
+    {
+      quarter: 'Q1 2019',
+      months: 'January - Match',
+      tasks: [
+        {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64}
+      ]
+    },
+
+  ]
   return (
     <div className="main-section">
       <HeaderSection/>
