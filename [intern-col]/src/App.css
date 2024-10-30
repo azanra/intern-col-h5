@@ -1,4 +1,4 @@
-body {
+body, h2 {
   margin: 0;
 }
 
@@ -10,4 +10,12 @@ body {
   height: 100vh;
   background-color: #1A0931;
   padding: 2.5vh 1.5vw;
+}
+
+h2{
+  font-weight: lighter;
+}
+
+.body-section {
+  padding: 2vh 4.5vw;
 }

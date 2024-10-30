@@ -11,17 +11,32 @@ function HeaderSection() {
   )
 }
 
+function BodySubheaderSection() {
+  return (
+    <div className='body-subheader-section'>
+      <h2>Product Roadmap</h2>
+    </div>
+  )
+}
+
+function SubBodySection() {
+  return (
+    <div className='sub-body-section'>
+      Main content
+    </div>
+  )
+}
+
 function BodySection() {
   return (
-    //return body section//
     <div className='body-section'>
-      Body
+      <BodySubheaderSection/>
+      <SubBodySection/>
     </div>
   )
 }
 
 function App() {
-
   return (
     <div className="main-section">
       <HeaderSection/>
