@@ -63,8 +63,8 @@ function ProgressNumber({progress}) {
 
 function ProgressButton() {
   return (
-    <div className='progress-btn'>
-      <button>...</button>
+    <div className='btn-container'>
+      <button className='progress-btn'>...</button>
     </div>
   )
 }
@@ -81,8 +81,8 @@ function ProgressSection({progress}) {
 
 function CreateButton() {
   return (
-    <div className='create-btn'>
-      <button>+</button>
+    <div className='create-btn-container'>
+      <button className='create-btn'>+</button>
     </div>
   )
 }

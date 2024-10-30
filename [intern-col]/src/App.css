@@ -5,8 +5,20 @@ body, h2, p {
 .main-section,
 .progress-section,
 .create-container,
-.sub-body-section {
+.sub-body-section,
+button,
+.progress-icon,
+.progress-number,
+.btn-container {
   display: flex;
+}
+
+.progress-icon,
+.progress-number,
+.create-text-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-section {
@@ -61,4 +73,24 @@ h2 {
   border-radius: 5px;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
 
+.create-btn {
+  color: #5E20B3;
+}
+
+.progress-button {
+  color: #B7BDC9;
+}
+
+.btn-container {
+  margin-bottom: 5%;
+}
+
+.body-subheader-section {
+  margin-bottom: 5%;
+}
