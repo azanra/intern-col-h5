@@ -79,6 +79,14 @@ function ProgressSection() {
   )
 }
 
+function CreateNewTaskBtn() {
+  return (
+    <div className='create-container'>
+
+    </div>
+  )
+}
+
 function TaskContainer() {
   return (
     <div className='task-container'>
