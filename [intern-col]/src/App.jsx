@@ -79,10 +79,27 @@ function ProgressSection() {
   )
 }
 
+function CreateButton() {
+  return (
+    <div className='create-btn'>
+      <button>+</button>
+    </div>
+  )
+}
+
+function CreateTextButton() {
+  return (
+    <div className='create-text-btn'>
+      <p>Create new task</p>
+    </div>
+  )
+}
+
 function CreateNewTaskBtn() {
   return (
     <div className='create-container'>
-
+      <CreateButton/>
+      <CreateTextButton/>
     </div>
   )
 }
@@ -92,6 +109,7 @@ function TaskContainer() {
     <div className='task-container'>
       <TaskDetail text={'Re-designed the zero-g doggie bags, No more spills!'}/>
       <ProgressSection/>
+      <CreateNewTaskBtn/>
     </div>
   )
 }
