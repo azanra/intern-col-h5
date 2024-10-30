@@ -69,11 +69,11 @@ function ProgressButton() {
   )
 }
 
-function ProgressSection() {
+function ProgressSection({progress}) {
   return (
     <div className='progress-section'>
       <ProgressIcon/>
-      <ProgressNumber text={'64'}/>
+      <ProgressNumber progress={progress}/>
       <ProgressButton/>
     </div>
   )
@@ -108,8 +108,7 @@ function TaskContainer({task, progress}) {
   return (
     <div className='task-container'>
       <TaskDetail task={task}/>
-      <ProgressSectio progress={progress}/>
-      <CreateNewTaskBtn/>
+      <ProgressSection progress={progress}/>
     </div>
   )
 }
@@ -119,7 +118,15 @@ function QuarterContainer({quarter, months, tasks}) {
     <div className='quarter-container'>
       <QuarterSection quarter={quarter}/>
       <MonthsSection months={months}/>
-      <TaskContainer tasks={tasks}/>
+      {tasks.length > 0 ? (
+        tasks.map((task, index) => (
+          <TaskContainer key={index} task={task.description} progress={task.progress}/>
+        ))
+        ) : (
+          <p>No Task Available</p>
+        ) 
+      }
+      <CreateNewTaskBtn/>
     </div>
   )
 }
@@ -138,14 +145,14 @@ function SubBodySection() {
   return (
     <div className='sub-body-section'>
       {
-        quartersData.map((data, index) => {
+        quartersData.map((data, index) => (
           <QuarterContainer 
             key={index}
             quarter={data.quarter}
             months={data.months}
             tasks={data.tasks}
             />
-        })
+        ))
       }
     </div>
   )
