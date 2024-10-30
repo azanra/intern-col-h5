@@ -19,10 +19,18 @@ function BodySubheaderSection() {
   )
 }
 
+function QuarterSection(props) {
+  return (
+    <div className='quarter-section'>
+      <p>{props.text}</p>
+    </div>
+  )
+}
+
 function FirstQuarterContainer() {
   return (
     <div className='first-quarter-container'>
-      First
+      <QuarterSection text={'Q1 2019'}/>
     </div>
   )
 }
