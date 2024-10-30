@@ -1,12 +1,17 @@
 body, h2, p {
   margin: 0;
   color: #2F3136;
+  font-family: 'Open Sans', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.progress-number,
+.progress-number > p,
 .quarter-section > p,
 .months-section > p {
   color: #5D6372;
+}
+
+.task-detail > p {
+  font-weight: bold;
 }
 
 .main-section,
@@ -35,7 +40,7 @@ button,
 }
 
 h2 { 
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .body-section {
@@ -90,7 +95,7 @@ button {
   color: #5E20B3;
 }
 
-.progress-button {
+.progress-btn {
   color: #B7BDC9;
 }
 
