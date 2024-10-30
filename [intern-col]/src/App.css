@@ -1,8 +1,10 @@
-body, h2 {
+body, h2, p {
   margin: 0;
 }
 
-.main-section {
+.main-section,
+.progress-section,
+.create-container {
   display: flex;
 }
 
@@ -19,3 +21,27 @@ h2{
 .body-section {
   padding: 2vh 4.5vw;
 }
+
+.sub-body-section {
+  border: 1px solid #F2F2F4;
+}
+
+.task-container {
+  border: 1px solid #E4E4E8;
+}
+
+.progress-number {
+  margin: 0 70% 0 3% ;
+}
+
+.create-btn {
+  margin-right: 2.5%;
+}
+
+.sub-body-section,
+.task-container {
+  padding: 2vh;
+  border-radius: 5px;
+}
+
+

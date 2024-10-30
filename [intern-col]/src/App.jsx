@@ -137,7 +137,8 @@ function SubBodySection() {
       quarter: 'Q1 2019',
       months: 'January - Match',
       tasks: [
-        {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64}
+        {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64},
+        {description: 'Travel & Relocation Support', progress: 12}
       ]
     },
 
