@@ -43,10 +43,19 @@ function TaskDetail(props) {
   )
 }
 
+function ProgressSection() {
+  return (
+    <div className='progress-section'>
+    
+    </div>
+  )
+}
+
 function TaskContainer() {
   return (
     <div className='task-container'>
       <TaskDetail text={'Re-designed the zero-g doggie bags, No more spills!'}/>
+      <ProgressSection/>
     </div>
   )
 }
