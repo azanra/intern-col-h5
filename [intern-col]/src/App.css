@@ -2,7 +2,14 @@
   --color-text-main: #2F3136;
   --color-text-lighter: #5D6372; 
   --font-size-main: 14px;
-  --font-size-sub: 12px
+  --font-size-sub: 12px;
+  --header-color:  #1A0931;
+  --quarter-container-border: #F2F2F4;
+  --task-container-border: #E4E4E8;
+  --create-btn-color: #5E20B3;
+  --progress-btn-color: #B7BDC9;
+  --system-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --border-radius-value: 4px;
 }
 
 * {
@@ -12,7 +19,7 @@
 body, h2, p {
   margin: 0;
   color: var(--color-text-main);
-  font-family: 'Open Sans', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Open Sans', var(--system-font);
 }
 
 h2 { 
@@ -49,7 +56,7 @@ p {
 
 .header-section {
   height: 100vh;
-  background-color: #1A0931;
+  background-color: var(--header-color);
   width: 68px;
   display: flex;
   justify-content: center;
@@ -70,14 +77,14 @@ p {
 }
 
 .quarter-container {
-  border: 1px solid #F2F2F4;
+  border: 1px solid var(--quarter-container-border);
   padding: 0 10px;
   width: 306px;
   height: 340px;
 }
 
 .task-container {
-  border: 1px solid #E4E4E8;
+  border: 1px solid var(--task-container-border);
   padding: 15px;
   height: 116px;
   width: 282px;
@@ -99,7 +106,7 @@ p {
 
 .sub-body-section,
 .task-container {
-  border-radius: 5px;
+  border-radius: var(--border-radius-value);
 }
 
 button {
@@ -109,9 +116,9 @@ button {
 }
 
 .create-btn {
-  color: #5E20B3;
+  color: var(--create-btn-color);
 }
 
 .progress-btn {
-  color: #B7BDC9;
+  color: var(--progress-btn-color);
 }
