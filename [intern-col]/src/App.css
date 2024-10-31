@@ -10,6 +10,7 @@
   --progress-btn-color: #B7BDC9;
   --system-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --border-radius-value: 4px;
+  --font-size-max: 20px;
 }
 
 * {
@@ -46,7 +47,7 @@ p {
 }
 
 .body-subheader-section > h2{
-  font-size: 20px;
+  font-size: var(--font-size-max);
   margin-bottom: 30px;
 }
 
@@ -97,11 +98,11 @@ p {
 }
 
 .progress-number {
-  margin: 0 70% 0 3% ;
+  margin: 0 175px 0 10px ;
 }
 
 .create-btn {
-  margin-right: 2.5%;
+  margin-right: 5px;
 }
 
 .sub-body-section,
@@ -112,7 +113,8 @@ p {
 button {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: var(--font-size-max);
+  font-weight: bolder;
 }
 
 .create-btn {
@@ -121,4 +123,5 @@ button {
 
 .progress-btn {
   color: var(--progress-btn-color);
+  margin-bottom: 15px;
 }
