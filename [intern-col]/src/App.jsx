@@ -163,7 +163,7 @@ function SubBodySection() {
   ];
   
   return (
-    <div className='sub-body-section flex-container'>
+    <div className='sub-body-section'>
       {quartersData.map((data, index) => (
         <QuarterContainer 
           key={index}

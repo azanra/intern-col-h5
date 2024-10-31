@@ -83,11 +83,17 @@ p {
   margin-top: 5px;
 }
 
+.sub-body-section {
+  display: flex;
+  align-items: start;
+  gap: 25px;
+}
+
 .quarter-container {
   border: 1px solid var(--quarter-container-border);
   padding: 0 10px;
   width: 306px;
-  height: 340px;
+  border-radius: var(--border-radius-value);
 }
 
 .task-container {
