@@ -11,6 +11,12 @@
   --system-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --border-radius-value: 4px;
   --font-size-max: 20px;
+  --no-task-color: #B7BDC9;
+}
+
+.no-task {
+  color: var(--no-task-color);
+  margin: 20px 0;
 }
 
 * {

@@ -123,7 +123,7 @@ function QuarterContainer({quarter, months, tasks}) {
           <TaskContainer key={index} task={task.description} progress={task.progress}/>
         ))
         ) : (
-          <p>No Task Available</p>
+          <p className='no-task'>No Task Available</p>
         ) 
       }
       <CreateNewTaskBtn/>
