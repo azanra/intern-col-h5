@@ -132,29 +132,46 @@ function QuarterContainer({quarter, months, tasks}) {
 }
 
 function SubBodySection() {
-  const firstQuarterData = [
+  const quartersData = [
     {
       quarter: 'Q1 2019',
-      months: 'January - Match',
+      months: 'January - March',
       tasks: [
         {description: 'Re-designed the zero-g doggie bags, No more spills!', progress: 64},
         {description: 'Travel & Relocation Support', progress: 12}
       ],
-    }
-  ]
-
+    },
+    {
+      quarter: 'Q2 2019',
+      months: 'April - June',
+      tasks: [],
+    },
+    {
+      quarter: 'Q3 2019',
+      months: 'July - September',
+      tasks: [
+        {description: 'Bundle interplanetary analytic for improved transmission', progress: 90},
+      ],
+    },
+    {
+      quarter: 'Q4 2019',
+      months: 'October - December',
+      tasks: [
+        {description: 'Data Migration: Performance & Culture End Game', progress: 63},
+      ],
+    },
+  ];
+  
   return (
     <div className='sub-body-section flex-container'>
-      {
-        firstQuarterData.map((data, index) => (
-          <QuarterContainer 
-            key={index}
-            quarter={data.quarter}
-            months={data.months}
-            tasks={data.tasks}
-            />
-        ))
-      }
+      {quartersData.map((data, index) => (
+        <QuarterContainer 
+          key={index}
+          quarter={data.quarter}
+          months={data.months}
+          tasks={data.tasks}
+          />
+      ))}
     </div>
   )
 }
