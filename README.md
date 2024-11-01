@@ -1,7 +1,5 @@
-# React + Vite
-
 # Design Mockup by
-# PT. Indonesia Untuk Dunia (https://www.happy5.co/).
+ PT. Indonesia Untuk Dunia (https://www.happy5.co/).
 
 # live Preview 
 - [live preview](https://azanra.github.io/intern-col-h5/)
