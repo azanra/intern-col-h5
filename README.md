@@ -1,8 +1,24 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Design Mockup by
+# PT. Indonesia Untuk Dunia (https://www.happy5.co/).
 
-Currently, two official plugins are available:
+# live Preview 
+- [live preview](https://azanra.github.io/intern-col-h5/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# About
+This project focus on converting mockup design to static
+website using react and vite. The project focus on creating
+a component that reusable throughout the project, and try
+to decrease redundant code.
+
+# Review
+- Organize the component, or at the very least make it so
+that it easier to understand on the first glances.
+- Write a clearer commit messages, explain why this commit
+happen instead of change that happen.
+- Store the css positioning in var, so that it can be reused
+for other component, ensuring consistency on positioning.
+
+# Screenshot
+![alt text](intern-col-ui.png)
